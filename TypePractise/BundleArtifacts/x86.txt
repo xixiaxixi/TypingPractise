@@ -1,0 +1,2 @@
+MainPackage=C:\Users\希希\source\repos\TypePractise\TypePractise\bin\x86\Debug\TypePractise_0.1.0.0_x86_Debug.appx
+SymbolPackage=C:\Users\希希\source\repos\TypePractise\TypePractise\AppPackages\TypePractise_0.1.0.0_Debug_Test\TypePractise_0.1.0.0_x86_Debug.appxsym

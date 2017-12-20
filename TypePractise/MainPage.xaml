@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="TypePractise.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TypePractise"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Text="" TextWrapping="Wrap" VerticalAlignment="Center" Height="191" Width="950" Margin="0,0,0,300" FontSize="48"/>
+        <TextBox x:Name="textBox_practising" HorizontalAlignment="Center" Text="" TextWrapping="Wrap" VerticalAlignment="Center" Height="191" Width="950" Margin="0,300,0,0" FontSize="48" TextChanged="textBox_TextChanged" IsTextPredictionEnabled="False"/>
+        <Button x:Name="button_change_line" Content="ChangeLetter" HorizontalAlignment="Left" Margin="89,102,0,0" VerticalAlignment="Top" Click="button_change_line_Click"/>
+        <TextBox x:Name="textBox_line" HorizontalAlignment="Left" Margin="240,102,0,0" Text="TextBox" VerticalAlignment="Top" Width="364" IsEnabled="False"/>
+        <TextBlock x:Name="textBlock_time" HorizontalAlignment="Left" Margin="958,110,0,0" Text="time" TextWrapping="Wrap" VerticalAlignment="Top" Width="209"/>
+        <TextBox x:Name="textBox_letterNum" HorizontalAlignment="Left" Margin="620,102,0,0" Text="TextBox" VerticalAlignment="Top" IsEnabled="{Binding Path=IsEnabled,ElementName=textBox_line,Mode=OneWay}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="626,83,0,0" Text="letterNum" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <ListView x:Name="listView_timelist" HorizontalAlignment="Left" Height="448" Margin="1024,276,0,0" VerticalAlignment="Top" Width="196"/>
+    </Grid>
+</Page>
